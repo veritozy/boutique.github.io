@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="esn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Etiqueta meta para el autor del sitio y que datos va a tener-->
+    <meta name="autor" content="Elizabeth Alarcón">
+    <!--Etiqueta meta para las palabras relacionadas con mi página-->
+    <meta name="keywords" content="Moda Outfit Novedades Descuentos">
+    <!--Etiqueta meta que va a ser la descripción de mi página-->
+    <meta name="description" content="Proyecto Zara">
+    <!--Link de Bootstrap - CDN via jsDelivr-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Linkeo mi hoja de estilos-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Dowload los iconos de BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Ícono ce la página web-->
+    <link rel="icon" type="image/x-icon" href="/Proyecto3/imagenes/icono.svg">
+    <!--Link Google Fonts fuente de texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <title>Componentes BOOTSTRAP</title>
+</head>
+
+<body>
+    <!--Utilizo las clases de bootstrap text-danger fs-3 text-center-->
+    <h1 class="text-danger fs-3 text-center">Página Web con Bootstrap...</h1>
+    <!--Crear el header del sitio-->
+    <header class="container-fluid bg-info d-flex p-3 mb-2 contenedorHeader">
+        <img src="imagenes/vimeo.svg" class="float-start" alt="logo" width="40px" height="40px">
+        <p class="text-dark fs-2 titulo1">Boutique Zara</p>
+    </header>
+    <!--Bootstrap Toggler-->
+    <!--En la clase de nav cambiamos el color bg-body-tertiary por bg-info--->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!--Reemplazamos Hidden brand por <i class="bi bi-vimeo"></i>-->
+                <a class="navbar-brand" href="#">
+                    <!--Coloco una clase mía icono-principal-->
+                    <i class="bi bi-vimeo icono-principal"></i>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">NosotrosD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Quitamos la clase disabled-->
+                        <a class="nav-link">Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Incrustamos un carrusel de Bootstrap-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/imagen1.webp" class="d-block w-100" alt="carrusel1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen2.jpg" class="d-block w-100" alt="carrusel2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen3.jpg" class="d-block w-100" alt="carrusel3">
+            </div>
+            <div class="carousel-item active">
+                <img src="imagenes/imagen4.webp" class="d-block w-100" alt="carrusel4">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen5.webp" class="d-block w-100" alt="carrusel5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!--Crear Sección Principal-->
+    <div class="d-flex justify-content-center">
+        <section class="w-50 text-center pt-5">
+            <h1 class="p-3 fs-2 border-top border-3">Historia de la <span class="text-primary">Boutique Zara</span></h1>
+            <p class="p-3 fs-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ipsum itaque officiis consectetur ex magni
+                officia numquam deserunt, molestiae, repudiandae harum omnis sint libero a quam aperiam vitae odio
+                repellat!
+            </p>
+        </section>
+    </div>
+    <!-- GRID -->
+    <section class="container-fluid">
+        <div class="row w-100">
+            <!-- Primera columna -->
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-2 text-center">
+                <img src="imagenes/imagen1.webp" alt="imagen2" width="180" height="160">
+                <div>
+                    <h3 class="fs-3 mt-4 px-4 pb-1">Quito</h3>
+                    <p class="px-4 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, sint. Debitis aspernatur culpa non placeat eos. Pariatur quia accusamus quisquam fugit? Nisi, neque cumque id modi assumenda quas culpa hic!</p>
+                </div>
+            </div>
+            <!-- Segunda columna -->
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-2 text-center">
+                <img src="imagenes/imagen2.jpg" alt="imagen2" width="180" height="160">
+                <div>
+                    <h3 class="fs-3 mt-4 px-4 pb-1">Quito</h3>
+                    <p class="px-4 fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, sint. Debitis aspernatur culpa non placeat eos. Pariatur quia accusamus quisquam fugit? Nisi, neque cumque id modi assumenda quas culpa hic!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
